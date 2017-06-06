@@ -14,15 +14,11 @@ end
 if angelsmods.petrochem then 
   require("prototypes.entities.bobsangelthon-petrochem-entities")
   require("prototypes.recipes.bobsangelthon-petrochem-recipes")
-  data.raw["item"]["coal-crushed"].fuel_value = "2MJ"
-  data.raw["item"]["solid-coke"].fuel_value = "4MJ"
-  data.raw["item"]["solid-carbon"].fuel_value = "6MJ"
-  data.raw["item"]["pellet-coke"].fuel_value = "24MJ"
 end
 
 if angelsmods.smelting then 
   require("prototypes.entities.bobsangelthon-smelting-entities")
-  
+  --[[
   require("prototypes.recipes.smelting.bobsangelthon-smelting-aluminium")
   --require("prototypes.recipes.smelting.bobsangelthon-smelting-chrome")
   require("prototypes.recipes.smelting.bobsangelthon-smelting-cobalt")
@@ -43,9 +39,10 @@ if angelsmods.smelting then
   --require("prototypes.recipes.smelting.bobsangelthon-smelting-steel")
 	
   require("prototypes.recipes.smelting.bobsangelthon-smelting-plates")
+  ]]
 end
 
-if angelsmods.addons.oresilo then 
+if angelsmods.addons.oresilos then
   require("prototypes.entities.bobsangelthon-oresilo-entities")
 end
 
